@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button.jsx';
 import './HeroSection.css';
-import HeroImage from '../../public/images/heroMain.jpg'
+import HeroImage from '../assets/images/heroMain';
 
 function HeroSection() {
   return (
