@@ -1,0 +1,63 @@
+/* Navbar.css */
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8; /* Light background, adjust as needed */
+  }
+  
+  .navbar-logo {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1511ec;
+  }
+  .navbar-links
+ img{
+   width:38px;
+   height:38px;
+  }
+  .navbar-links a{
+    margin-top:5%;
+    color: #7700AE;
+    text-decoration: none;
+    font-family: Karma;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+
+
+
+  }
+  
+  .navbar-links .links {
+    display: flex;
+    gap:40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .list-items a {
+    text-decoration: none;
+    color:#000;
+    font-size: 16px;
+  }
+  
+  .list-items a:hover {
+    color:#7700AE;
+  }
+  
+ 
+  @media screen and (max-width:768px){
+    
+  .navbar-links {
+    flex-direction: column;
+  }
+  .links {
+    flex-direction: column;
+  }
+}
+  /* HeroSection.css */
+  

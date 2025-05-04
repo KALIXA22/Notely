@@ -1,3 +1,9 @@
 :root{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Karma;
+  font-size:12px;
+  background: #ffff;
+  color:#000;
+  box-sizing: border-box;
+  padding:0;
+  margin: 0;
 }

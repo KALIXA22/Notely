@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import Logo from '../assets/images/logoNotely.png'
 import {Link} from 'react-router-dom';
 import './Navbar.css';
 
@@ -7,6 +8,7 @@ function Navbar() {
     <>
     <nav className="navbar-links">
         <div className="navbar-logo">
+          <img src={Logo} alt="" />
           <Link to='/'>Notely</Link> 
         </div>
         <ul className="links">
@@ -24,10 +26,8 @@ function Navbar() {
             </li>
         </ul>
         <div className="navbar-dropdown">
-
         </div>
-    </nav>
-        
+    </nav>    
     </>
   )
 }
