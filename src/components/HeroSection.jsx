@@ -21,6 +21,8 @@ function HeroSection() {
             <Link to="/signup"> {/* Use Link for navigation */}
             <button className="get-started-button">Get Started</button>
       </Link>
+      <br />
+      <br />
       <Link to="/login">    {/* Use Link for navigation */}
         <button className="login-button">Login</button>
       </Link>

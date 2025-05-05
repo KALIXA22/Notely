@@ -84,7 +84,9 @@ font-size: 15px;
   }
   /* Added to make buttons appear side-by-side and spaced */
   button {
-    margin-right: 10px; /* Add horizontal margin between buttons */
+    margin-right:1rem; 
+    width:15rem;
+    height:auto;/* Add horizontal margin between buttons */
   }
   
   /* Responsive Adjustments */

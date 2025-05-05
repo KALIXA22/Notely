@@ -1,0 +1,28 @@
+h1{
+    font-size:2rem;
+    text-align: center;
+}
+.testimonials__items{
+    display:flex;
+    padding:3rem;
+    gap:5rem;
+}
+@media screen and(max-width:768px){
+    .testimonials__items{
+        display:block;
+        padding:3rem;
+        gap:5rem;
+        
+    }
+    .testimonials__items__TestimonialCard{
+        width:20rem;
+        height:20rem;
+    }
+}
+@media screen and (max-width:960px) {
+    .testimonials__items{
+        display:block;
+        padding:3rem;
+        gap:5rem;
+    }
+}

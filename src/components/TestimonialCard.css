@@ -1,0 +1,92 @@
+.testimonialCard {
+    flex-direction: column;
+    font-family: Karma;
+    width: 20rem;
+    min-height: 20rem;
+    border-radius:4.5rem;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .testimonialCard:hover {
+    transform: translateY(5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .testimonialCard-head {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonialCard-head img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e5e7eb;
+  }
+  
+  .testimonialCard-head p {
+    font-size: 1.3rem;
+    font-weight:600;
+    color: #000;
+  }
+  
+  .testimonialCard-stars {
+    display: flex;
+    gap:0.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .star {
+    cursor: pointer; /* Gray for unfilled stars */
+    transition: color 0.2s ease;
+  }
+  
+  .star.filled {
+   color: #facc15; /* Yellow for filled stars */
+  }
+  
+  .testimonialCard-text {
+    font-size: 0.95rem;
+    color: #000;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    flex-grow:2;
+  }
+  
+  .testimonialCard-readmore {
+    font-size: 1.2rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .testimonialCard-readmore:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .testimonialCard {
+      width: 100%;
+      min-height:2rem;
+      border-radius: 10px;
+      padding:1rem;
+    }
+  
+    .testimonialCard-head img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .testimonialCard-head p {
+      font-size: 1rem;
+    }
+  
+    .testimonialCard-text {
+      font-size: 0.9rem;
+    }
+  }
