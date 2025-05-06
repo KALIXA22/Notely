@@ -4,7 +4,8 @@ import HeroSection from '../components/HeroSection';
 import About from './About';
 import Cards from '../components/Cards'
 import Testimonials from './Testimonials';
-import  Searchcard  from '../components/Searchcard';
+import  SearchBar  from '../components/SearchBar';
+import Footer  from '../components/Footer';
 
 function Home() {
   return (
@@ -14,7 +15,10 @@ function Home() {
     <About/>
     <Cards/>
     <Testimonials/>
-    <Searchcard/> 
+    <SearchBar/>
+    <Footer/> 
+    
+    
     </>
   )
 }

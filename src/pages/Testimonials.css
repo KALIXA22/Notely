@@ -1,5 +1,6 @@
 h1{
-    font-size:2rem;
+    font-family: Karma;
+    font-size:3rem;
     text-align: center;
 }
 .testimonials__items{
@@ -7,16 +8,19 @@ h1{
     padding:3rem;
     gap:5rem;
 }
-@media screen and(max-width:768px){
+.testimonials__items__text{
+    font-size:2rem;
+    font-family:Karma;
+}
+@media screen and (max-width:768px){
     .testimonials__items{
         display:block;
         padding:3rem;
-        gap:5rem;
-        
+        gap:5rem; 
     }
-    .testimonials__items__TestimonialCard{
-        width:20rem;
-        height:20rem;
+    .testimonials__items__text{
+        font-size: 2rem;
+        font-family:Karma;
     }
 }
 @media screen and (max-width:960px) {
@@ -24,5 +28,13 @@ h1{
         display:block;
         padding:3rem;
         gap:5rem;
+    }
+    .testimonials__items_text{
+        font-size: 2rem;
+        font-family:Karma;
+    }
+    .testimonials__items__TestimonialCard{
+        width:20rem;
+        height:20rem;
     }
 }

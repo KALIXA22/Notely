@@ -3,41 +3,41 @@
     display: flex;
     justify-content: space-around; /* Space out image and text */
     align-items: center; /* Vertically center items */
-    padding: 20px;
-    gap:20px;
+    padding: 2rem;
+    gap:2rem;
     text-align: left;
   }
   
-  .hero-image img {
+.hero-image img {
     /* width: 50%;  Take up half the container */
-    max-width: 500px; /* Maximum width */
+    max-width: 50rem; /* Maximum width */
     height: auto; /* Maintain aspect ratio */
   }
   
-  .hero-content {
+.hero-content {
     /* width: 50%; */
-    padding-left: 20px;
+    padding-left: 2rem;
   }
 .hero-content .hero-content-title{
 font-family: Labrada;
 font-weight: 400;
-font-size:45px;
+font-size:4rem;
 color: #000;
-gap:22px;
+gap:2rem;
   }
 .hero-content p {
- font-family: Karma;
+font-family: Karma;
  color: #000;
 font-weight: 400;
-font-size: 15px;
+font-size: 1.5rem;
   }
   
   .hero-title {
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: bold;
     color: #222;
-    margin-bottom: 20px;
-    max-width: 600px;
+    margin-bottom: 2rem;
+    max-width: 60rem;
     line-height: 1.2;
   }
   
@@ -48,11 +48,11 @@ font-size: 15px;
 /* Button.css */
 .get-started-button { /* Purple color */
     color: white;
-    padding: 12px 24px;
-    background: #7538B2;;
+    padding: 1.2rem 2.4rem;
+    background: #7538B2;
     border: none;
-    border-radius: 25px; /* Fully rounded corners */
-    font-size: 18px;
+    border-radius: 2.5rem; /* Fully rounded corners */
+    font-size: 1.5rem;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     transition:0.5s ease;
@@ -67,10 +67,10 @@ font-size: 15px;
    /* Transparent background */
    background: white;
     color: #7538B2; /* Purple color */
-    padding: 10px 24px;  /*slightly different padding to match image*/
+    padding: 1rem 2.4rem;  /*slightly different padding to match image*/
     border: 2px solid #7538B2;;
-    border-radius: 25px ;
-    font-size: 18px;
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: 1s ease;
@@ -79,7 +79,6 @@ font-size: 15px;
   .login-button:hover {
     border: none;
     background-color: #7538B2;
-    color: white;
     color: white;/* Light background on hover, to match image*/
   }
   /* Added to make buttons appear side-by-side and spaced */
