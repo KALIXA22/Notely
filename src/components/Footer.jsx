@@ -1,25 +1,27 @@
-import React from 'react';
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faTwitter, faYoutube, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css';
 
-
-function Footer() {
+const Footer = () => {
   return (
-    <>
-    <div className="footer-section">
-        <p className='footer-socials'>Follow us on:</p>
-        <div className="socials">
-        <InstagramIcon/>
-        <FacebookIcon/>
-        <TwitterIcon/>
-        <LinkedInIcon/>
-        </div>
-    </div>
-    </>
-  )
-}
+    <footer>
+      <p>Follow us On:</p>
+      <div>
+        <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
+        <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+        <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
+        <a href="#"><FontAwesomeIcon icon={faYoutube} /></a>
+        <a href="#"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Faqs</a>
+      </nav>
+      <p>Copyright © 2025: Designed by The Notely-Team</p>
+    </footer>
+  );
+};
 
 export default Footer;

@@ -1,18 +1,49 @@
-.footer-section{
-    display:block;
-    background:#f8f8f8;
-    justify-content:center;
+footer{
+    background-color: #f8f8f8;
+    color: #000;
+    padding:2rem;
+   
     text-align: center;
-}
-.footer-socials{
-    font-size:3rem;
-}
-.socials{
-    gap:2rem;
-}
-.socials__InstagramIcon{
-    color: black;
-}
-.socials__InstagramIcon:hover{
-    color:#7538B2;;
-}
+  }
+footer p{
+    font-size:2rem;
+  }
+  footer div {
+    
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  footer div a {
+    font-size:1.5rem;
+    color:#000;
+    text-decoration: none;
+  }
+  
+  footer div a:hover {
+    
+    color: #7538B2;
+
+  }
+  
+  footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+    margin-bottom:0.8rem;
+  }
+  
+  footer nav a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  footer nav a:hover {
+    color: #7538B2;
+
+  }
+  
+  footer p {
+    font-size: 1.4rem;
+  }

@@ -32,79 +32,8 @@ const SearchBar = () => {
         </span>
       </button>
     </form>
-     <form onSubmit={handleSearch} className="search-bar-container">
-     <input
-       type="text"
-       value={query}
-       onChange={handleInputChange}
-       placeholder="Is Notely free to use?"
-       className="search-input"
-     />
-     <button type="submit" className="search-button">
-       <span className="magnifying-glass">
-       <img src={search} alt="" />
-       </span>
-     </button>
-   </form>
-    <form onSubmit={handleSearch} className="search-bar-container">
-    <input
-      type="text"
-      value={query}
-      onChange={handleInputChange}
-      placeholder="Is Notely free to use?"
-      className="search-input"
-    />
-    <button type="submit" className="search-button">
-      <span className="magnifying-glass">
-        <img src={search} alt="" />
-      </span>
-    </button>
-  </form>
-  <form onSubmit={handleSearch} className="search-bar-container">
-    <input
-      type="text"
-      value={query}
-      onChange={handleInputChange}
-      placeholder="Is Notely free to use?"
-      className="search-input"
-    />
-    <button type="submit" className="search-button">
-      <span className="magnifying-glass">
-        <img src={search} alt="" />
-      </span>
-    </button>
-  </form>
-  <form onSubmit={handleSearch} className="search-bar-container">
-    <input
-      type="text"
-      value={query}
-      onChange={handleInputChange}
-      placeholder="Is Notely free to use?"
-      className="search-input"
-    />
-    <button type="submit" className="search-button">
-      <span className="magnifying-glass">
-        <img src={search} alt="" />
-      </span>
-    </button>
-  </form>
-  <form onSubmit={handleSearch} className="search-bar-container">
-    <input
-      type="text"
-      value={query}
-      onChange={handleInputChange}
-      placeholder="Is Notely free to use?"
-      className="search-input"
-    />
-    <button type="submit" className="search-button">
-      <span className="magnifying-glass">
-        <img src={search} alt="" />
-      </span>
-    </button>
-  </form>
-  </div>
-  </>
-  );
-};
-
+    </div>
+    </>
+    )
+  }
 export default SearchBar;

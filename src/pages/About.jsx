@@ -15,7 +15,7 @@ function About() {
                      or your personal study sessions?
                      Upload them in just a few clicks—no complicated steps, no hassle.
                      </p>
-                     <img src={AboutImage1} alt="" />
+                     <img src={AboutImage3} alt="" />
             </div>
             <div className="apart-container">
                 <p className='about-title'>Download notes easily</p>
@@ -23,10 +23,8 @@ function About() {
                      Notely lets you search, preview, 
                      and download organized notes from real 
                      students like you.</p>
-                 <img src={AboutImage2} alt="" />
+                 <img src={AboutImage1} alt="" />
                      
-                   
-
             </div>
             <div className="apart-container">
                 <p className='about-title'>Connect with others</p>
@@ -36,7 +34,7 @@ function About() {
                       where learners share, recommend, 
                       and review notes together.
                      </p>
-                     <img src={AboutImage3} alt="" />
+                     <img src={AboutImage2} alt="" />
             </div>
         </div>
        
@@ -44,5 +42,4 @@ function About() {
     </>
   )
 }
-
 export default About;

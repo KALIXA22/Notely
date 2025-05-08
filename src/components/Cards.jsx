@@ -36,7 +36,7 @@ function Cards() {
                 alt="Person creating an account"
               />
               <CardItem
-                src={Hero3}
+                src={Hero4}
                 title="Download files"
                 text="Need notes the night
                  before an exam? We got you.
@@ -46,7 +46,7 @@ function Cards() {
                 alt="Person downloading files"
               />
               <CardItem
-                src={Hero4}
+                src={Hero3}
                 title="Earn badges & points"
                 text="The more you share, 
                 the more likes and downloads you receive. Level up your contributor badge, gain visibility, and become a go-to resource for other students."

@@ -19,7 +19,7 @@
     padding-left: 2rem;
   }
 .hero-content .hero-content-title{
-font-family: Labrada;
+font-family:Karma;
 font-weight: 400;
 font-size:4rem;
 color: #000;
@@ -47,9 +47,9 @@ font-size: 1.5rem;
   
 /* Button.css */
 .get-started-button { /* Purple color */
-    color: white;
+    color:#fff;
     padding: 1.2rem 2.4rem;
-    background: #7538B2;
+    background:#7538B2;
     border: none;
     border-radius: 2.5rem; /* Fully rounded corners */
     font-size: 1.5rem;
@@ -60,15 +60,15 @@ font-size: 1.5rem;
   
   .get-started-button:hover {
     background-color:#fff;
-    color: #7538B2;/* Darker purple on hover */
+    color:#7538B2;/* Darker purple on hover */
   }
   
   .login-button {
    /* Transparent background */
-   background: white;
-    color: #7538B2; /* Purple color */
+    background:white;
+    color:#7538B2;/* Purple color */
     padding: 1rem 2.4rem;  /*slightly different padding to match image*/
-    border: 2px solid #7538B2;;
+    border: 2px solid #7538B2;
     border-radius: 2.5rem;
     font-size: 1.5rem;
     cursor: pointer;
@@ -78,7 +78,7 @@ font-size: 1.5rem;
   
   .login-button:hover {
     border: none;
-    background-color: #7538B2;
+    background-color:#7538B2;
     color: white;/* Light background on hover, to match image*/
   }
   /* Added to make buttons appear side-by-side and spaced */

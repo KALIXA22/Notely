@@ -3,11 +3,11 @@ import { Star } from 'lucide-react';
 import './TestimonialCard.css';
 
 function TestimonialCard(props) {
-  const [starStates, setStarStates] = useState([false, false, false, false, false]);
+  const [starStates, setStarStates] = useState([true, true, true , true, true]);
 
   const handleStarClick = (index) => {
     const newStarStates = starStates.map((state, i) =>
-      i <= index ? !starStates[index] : state
+      i <= index ? starStates[index] : state
     );
     setStarStates(newStarStates);
   };

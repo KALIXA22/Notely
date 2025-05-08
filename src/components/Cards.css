@@ -4,7 +4,6 @@
   text-align:center;
   margin:0 auto;
 }
-
 .cards h1 {
   font-size:3rem;
   color: #000;
@@ -56,15 +55,15 @@
 
 .cards__item__title {
   font-size:2rem;
-  color: #333;
-  margin-bottom: 1rem;
+  color: #000;
+  margin-bottom:1rem;
   font-weight: bold;
 }
 
 .cards_item_text {
   font-size: 0.9rem;
-  color: #666;
-  line-height: 1.5;
+  color: #333;
+  line-height:1.5;
 }
 img{
   width:50rem;
@@ -128,14 +127,14 @@ img{
   
   .cards__item__title {
     font-size:2rem;
-    color: #333;
+    color: #000;
     margin-bottom: 1rem;
     font-weight: bold;
   }
   
   .cards_item_text {
     font-size: 0.9rem;
-    color: #666;
+    color: #333;
     line-height: 1.5;
   }
   img{

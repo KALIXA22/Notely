@@ -1,10 +1,10 @@
 :root{
-  border-radius:2rem;
-  font-family:Karma;
-  font-size:12px;
-  background: #ffff;
-  color:#000;
   box-sizing: border-box;
   padding:0;
   margin: 0;
+  border-radius:2rem;
+  font-family:Karma,sans-serif;
+  font-size:62.5%;
+  background: #ffff;
+  color:#000;
 }

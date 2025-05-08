@@ -1,25 +1,29 @@
 h1{
-    font-family: Karma;
+    font-family:'Karma', sans-serif;
     font-size:3rem;
-    text-align: center;
+    text-align:center;
 }
 .testimonials__items{
     display:flex;
     padding:3rem;
     gap:5rem;
 }
+.testimonials__items__src{
+    font-size:3rem;
+    font-family:Karma; 
+}
 .testimonials__items__text{
-    font-size:2rem;
+    font-size:3rem;
     font-family:Karma;
 }
-@media screen and (max-width:768px){
+@media screen and(max-width:768px){
     .testimonials__items{
         display:block;
         padding:3rem;
         gap:5rem; 
     }
     .testimonials__items__text{
-        font-size: 2rem;
+        font-size:2rem;
         font-family:Karma;
     }
 }
@@ -30,7 +34,7 @@ h1{
         gap:5rem;
     }
     .testimonials__items_text{
-        font-size: 2rem;
+        font-size:2rem;
         font-family:Karma;
     }
     .testimonials__items__TestimonialCard{
