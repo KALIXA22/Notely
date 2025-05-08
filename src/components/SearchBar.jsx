@@ -1,39 +1,65 @@
 import React, { useState } from 'react';
-import search from '../assets/images/search.png'
-import './Search.css'; // We'll create this CSS file next
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronDown, ChevronUp } from 'lucide-react';
+import './Search.css'
 
-const SearchBar = () => {
-  const [query, setQuery] = useState('');
+const faqs = [
+    { question: "Is Notely free to use?",
+       answer: "Yes, Notely offers a free plan with basic features." },
+    { question: "Can I edit or delete my notes later?",
+       answer: "Yes, you can edit or delete your notes anytime." },
+    { question: "Can I earn rewards for uploading?", 
+      answer: "Yes! Notely provides rewards for contributing notes." },
+    { question: "Can you upload multiple notes at the same time?", 
+      answer: "No, Notely supports uploading one note at a time." },
+    { question: "How do I search for notes by topic?", 
+      answer: "Use the search bar with your keyword to filter notes." },
+    { question: "Is there a way to use Notely offline?",
+       answer: "Offline access is limited; a connection is recommended." },
+];
 
-  const handleInputChange = (e) => {
-    setQuery(e.target.value);
-  };
+const PeopleAlsoAsk = () => {
+    const [openIndex, setOpenIndex] = useState(null);
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    console.log('Search query:', query); // Replace with your search logic
-  };
+    const toggleAccordion = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
 
-  return (
-    <>
-    <p className='form-title'>People also ask:</p>
-    <div className="form-containers">
-    <form onSubmit={handleSearch} className="search-bar-container">
-      <input
-        type="text"
-        value={query}
-        onChange={handleInputChange}
-        placeholder="Is Notely free to use?"
-        className="search-input"
-      />
-      <button type="submit" className="search-button">
-        <span className="magnifying-glass">
-        <img src={search} alt="" />
-        </span>
-      </button>
-    </form>
-    </div>
-    </>
-    )
-  }
-export default SearchBar;
+    return (
+        <div className="people-also-ask-container">
+            <h2 className="people-also-ask-title">People Also Ask:</h2>
+            <div className="accordion-container">
+                {faqs.map((item, index) => (
+                    <div
+                        key={index}
+                        className={`accordion-item ${openIndex === index ? 'open' : ''}`}
+                    >
+                        <button
+                            className="accordion-header"
+                            onClick={() => toggleAccordion(index)}
+                            aria-expanded={openIndex === index}
+                        >
+                            {item.question}
+                            {openIndex === index ? <ChevronUp /> : <ChevronDown />}
+                        </button>
+                        <AnimatePresence>
+                            {openIndex === index && (
+                                <motion.div
+                                    initial={{ height: 0 }}
+                                    animate={{ height: 'auto' }}
+                                    exit={{ height: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="accordion-content"
+                                >
+                                    {item.answer}
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default PeopleAlsoAsk;
