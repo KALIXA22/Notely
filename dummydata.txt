@@ -1,0 +1,3 @@
+remember to add routes and so some correct layouts and also remember
+favicon and the icon as well as the icon
+remember routes correctly and link to other pages as well
